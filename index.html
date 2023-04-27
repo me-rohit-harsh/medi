@@ -65,7 +65,7 @@
                         <ul class="social-icons update-si">
                             <li class="search-sys">
                                 <input type="search" id="search-medicine" name="search-medicine"
-                                    class="form-control search-text" placeholder="Search for meds" autocomplete="off"
+                                    class="form-control search-text" placeholder="Search Medicine" autocomplete="off"
                                     style="display: inline;" spellcheck="false">
                             </li>
                             <li><img src="icons/location.png" alt="" srcset="" class="icon-size">
@@ -152,6 +152,8 @@
                         </div>
                     </div>
                     <div id="webCifar-icon">
+                        <a href="https://api.whatsapp.com/send?phone=917488794480&forceIntent=true&load=loadInIOSExternalSafari"
+                            target="_blank"><img src="icons/whatsapp.png" alt="" srcset=""></a>
                         <img src="images/headphones_1.webp" alt="" srcset="">
                     </div>
                 </div>
@@ -169,6 +171,7 @@
                 height: 100%;
                 z-index: 10;
                 overflow: hidden;
+                background: #222;
             }
 
             .no-js #loader-wrapper {
@@ -259,34 +262,6 @@
                 }
             }
 
-            #loader-wrapper .loader-section {
-                position: fixed;
-                top: 0;
-                width: 51%;
-                height: 100%;
-                background: #222;
-                z-index: 10;
-            }
-
-            #loader-wrapper .loader-section.section-left {
-                left: 0;
-            }
-
-            #loader-wrapper .loader-section.section-right {
-                right: 0;
-            }
-
-            /* Loaded styles */
-            .loaded #loader-wrapper .loader-section.section-left {
-                transform: translateX(-100%);
-                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-            }
-
-            .loaded #loader-wrapper .loader-section.section-right {
-                transform: translateX(100%);
-                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-            }
-
             .loaded #loader {
                 opacity: 0;
                 transition: all 0.3s ease-out;
@@ -294,15 +269,13 @@
 
             .loaded #loader-wrapper {
                 visibility: hidden;
-                transform: translateY(-100%);
-                transition: all 0.3s 1s ease-out;
             }
         </style>
         <div id="loader-wrapper">
             <div id="loader"></div>
 
-            <div class="loader-section section-left"></div>
-            <div class="loader-section section-right"></div>
+            <!-- <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div> -->
 
         </div>
         <script>$(document).ready(function () {
@@ -518,9 +491,7 @@
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-text">Lorem ipsum dolor sit amet consectetur.</h5>
-
                                 </div>
-
                             </div>
                         </a>
                     </div>
@@ -532,9 +503,7 @@
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-text">Lorem ipsum dolor sit amet consectetur.</h5>
-
                                 </div>
-
                             </div>
                         </a>
                     </div>
@@ -789,8 +758,9 @@
                             </div>
                             <div class="contact-info-text">
                                 <h2>E-mail</h2>
-                                <span>rkdpmedicare@gmail.com</span>
-                                <span>Ravi@rkdpmedicare.com</span>
+                                <span><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=jrjtXPWwZSRXwrQdHnjndRVqvmDlXgkfBVCQfqvQgdqqdXbtgjsPTFMdZfrMgnkJmDCPHHhT">rkdpmedicare@gmail.com</a></span>
+                                <span><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=jrjtXPWwZSRXwrQdHnjndRVqvmDlXgkfBVCQfqvQgdqqdXbtgjsPTFMdZfrMgnkJmDCPHHhT">Ravi@rkdpmedicare.com</a></span>
+                               
                             </div>
                         </div>
                     </div>
@@ -888,15 +858,15 @@
                                 ut
                                 labore et dolore magna aliqua. Quis ipsum </p>
                             <div class="hr"></div>
-                            <h6>1120 Lorem ipsum dolor sit amet, KC 179050, Chandigarh.</h6>
+                            <h6>Opp: BOI ATM, Sandalpur More, Bazar Samiti, Patna-800006, Bihar</h6>
                             <h6>+01 2345 6789 12<span>|</span>+01 2345 6789 12</h6>
-                            <div class="contact-social">
+                            <div class="contact-social" >
                                 <ul>
                                     <li><a class="hover-target" href=""><i class="fab fa-facebook-f"></i></a></li>
                                     <li><a class="hover-target" href=""><i class="fab fa-linkedin-in"></i></a></li>
                                     <li><a class="hover-target" href=""><i class="fab fa-github"></i></a></li>
                                     <li><a class="hover-target" href=""><i class="fab fa-behance"></i></a></li>
-                                    <li><a class="hover-target" href=""><i class="fab fa-pinterest-p"></i></a></li>
+                                    <!-- <li><a class="hover-target" href=""><i class="fab fa-pinterest-p"></i></a></li> -->
                                 </ul>
                             </div>
                         </div>
