@@ -55,19 +55,6 @@ a:hover {
     overflow: hidden
 }
 
-html::-webkit-scrollbar {
-    width: .8rem
-}
-
-html::-webkit-scrollbar-track {
-    background: 0 0
-}
-
-html::-webkit-scrollbar-thumb {
-    background: var(--primary);
-    border-radius: 5rem
-}
-
 body {
     font-family: "Helvetica Neue", sans-serif;
     font-weight: lighter
@@ -1594,3 +1581,35 @@ input.search-text::-webkit-search-cancel-button {
 #webCifar a {
     color: #fff
 }
+
+
+/* for scroll bar start */
+* {
+    scrollbar-color: transparent #B5CCD4 !important;
+    scrollbar-width: thin !important;
+    scroll-behavior: smooth;
+}
+
+* ::-webkit-scrollbar {
+    width: 0.3333333333em;
+}
+
+* ::-webkit-scrollbar-track {
+    background: transparent;
+    opacity: 0.5;
+}
+
+* ::-webkit-scrollbar-thumb {
+    background: #727389;
+}
+
+* ::-webkit-scrollbar-thumb:hover {
+    background: #81CFFF;
+}
+
+*::-webkit-scrollbar-corner {
+    display: none;
+}
+
+
+/* for scroll bar end  */
