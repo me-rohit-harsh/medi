@@ -258,3 +258,26 @@ google.maps.event.addDomListener(window, 'load', initializeMap);
 
 
 // map js end 
+
+// pop up contact form start 
+
+// Get the modal
+var popup_modal = document.getElementById('email-now-modal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("email-now-cta");
+
+// Get the <span> element that closes the modal
+var span = document.getElementById("pop-close");
+
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function () {
+    popup_modal.style.display = "block";
+    popup_modal.classList.add("fade-in-popup");
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+    popup_modal.style.display = "none";
+}
+// pop up contact form end 
