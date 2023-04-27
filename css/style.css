@@ -524,7 +524,9 @@ footer p {
     }
 
     header {
+        width: 100%;
         height: 70vh;
+        background: url(/images/bg1.jpg) 30% 50%/cover no-repeat
     }
 
     .heading {
@@ -1251,7 +1253,7 @@ hr {
 }
 
 .contact-info-item {
-    background: #4d8eac;
+    background: #A6D0F0;
     padding: 30px 0
 }
 
@@ -1293,8 +1295,8 @@ hr {
     margin-bottom: 10px
 }
 
-.contact-info-text span {
-    color: rgb(207 204 204);
+.contact-info-text a {
+    color: rgb(0, 0, 0);
     font-size: 16px;
     display: inline-block;
     width: 100%
@@ -1390,7 +1392,7 @@ hr {
 }
 
 .contact-content h6 {
-    color: #8b9199;
+    color: #000000;
     font-size: 15px;
     font-weight: 400;
     margin-bottom: 10px
@@ -1407,7 +1409,8 @@ hr {
 }
 
 .contact-social>ul {
-    display: inline-flex
+    display: inline-flex;
+    padding-left: 0;
 }
 
 .contact-social ul li a {
@@ -1572,13 +1575,19 @@ input.search-text::-webkit-search-cancel-button {
     position: relative;
     margin: 5px;
     cursor: pointer;
-    right: -70%
+    right: -60%
 }
 
-#webCifar-icon img {
+#webCifar-icon img:nth-child(2) {
     max-width: 40px;
     background-color: #0093d5;
     padding: 3px;
+    border-radius: 10px
+}
+
+#webCifar-icon img:nth-child(1) {
+    max-width: 40px;
+    background-color: #00BF22;
     border-radius: 10px
 }
 
