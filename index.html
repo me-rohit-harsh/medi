@@ -126,7 +126,9 @@
                                 <div class="heading">
                                     <h2>Providing Quality Driven</h2>
                                     <h1>Pharmaceutical Products</h1>
-                                    <button class="custom-btn btn-11">Enquiry Now<div class="dot"></div></button>
+                                    <!-- <button  class="cta">Email Us</button> -->
+                                    <button class="custom-btn btn-11 cta" id="email-now-cta">Enquiry Now<div
+                                            class="dot"></div></button>
                                 </div>
                             </div>
                         </div>
@@ -160,6 +162,28 @@
             </header>
         </div>
     </section>
+    <!-- popup start contact form start  -->
+    <section class="contact-popup">
+        <div id="email-now-modal" class="popup_modal ">
+            <div class="modal-content-popup">
+                <form class="popup-form" method="post" action="connect1.php">
+                    <span class="pop-close" id="pop-close">&times;</span>
+                    <h2>CONTACT US</h2>
+                    <p type="Name:"><input placeholder="Enter Name" name="name"></input></p>
+                    <p type="Mobile Number:"><input placeholder="Enter Mobile Number" name="email"></input>
+                    </p>
+                    <p type="Message:"><input placeholder="What would you like to tell us.." name="message"></input></p>
+                    <button class="custom-btn btn-11" style="margin-left: 0;" type="submit" value="Send Now">Send Now
+                        <div class="dot">
+                        </div>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <!-- popup start contact form end  -->
+    <!-- loder satrt  -->
     <section>
         <style>
             /* The Loader */
@@ -278,14 +302,16 @@
             <div class="loader-section section-right"></div> -->
 
         </div>
-        <script>$(document).ready(function () {
+        <script>
+            $(document).ready(function () {
 
                 // Fakes the loading setting a timeout
                 setTimeout(function () {
                     $('body').addClass('loaded');
                 }, 1500);
 
-            });</script>
+            });
+        </script>
     </section>
     <section class="search" id="search-bar">
         <div class="container">
@@ -632,13 +658,17 @@
             <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
             <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
             <ul id="testim-dots" class="dots">
-                <li class="dot active"></li><!--
+                <li class="dot active"></li>
+                <!--
                             -->
-                <li class="dot"></li><!--
+                <li class="dot"></li>
+                <!--
                             -->
-                <li class="dot"></li><!--
+                <li class="dot"></li>
+                <!--
                             -->
-                <li class="dot"></li><!--
+                <li class="dot"></li>
+                <!--
                             -->
                 <li class="dot"></li>
             </ul>
@@ -758,9 +788,11 @@
                             </div>
                             <div class="contact-info-text">
                                 <h2>E-mail</h2>
-                                <span><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=jrjtXPWwZSRXwrQdHnjndRVqvmDlXgkfBVCQfqvQgdqqdXbtgjsPTFMdZfrMgnkJmDCPHHhT">rkdpmedicare@gmail.com</a></span>
-                                <span><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=jrjtXPWwZSRXwrQdHnjndRVqvmDlXgkfBVCQfqvQgdqqdXbtgjsPTFMdZfrMgnkJmDCPHHhT">Ravi@rkdpmedicare.com</a></span>
-                               
+                                <span><a
+                                        href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=jrjtXPWwZSRXwrQdHnjndRVqvmDlXgkfBVCQfqvQgdqqdXbtgjsPTFMdZfrMgnkJmDCPHHhT">rkdpmedicare@gmail.com</a></span>
+                                <span><a
+                                        href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=jrjtXPWwZSRXwrQdHnjndRVqvmDlXgkfBVCQfqvQgdqqdXbtgjsPTFMdZfrMgnkJmDCPHHhT">Ravi@rkdpmedicare.com</a></span>
+
                             </div>
                         </div>
                     </div>
@@ -860,7 +892,7 @@
                             <div class="hr"></div>
                             <h6>Opp: BOI ATM, Sandalpur More, Bazar Samiti, Patna-800006, Bihar</h6>
                             <h6>+01 2345 6789 12<span>|</span>+01 2345 6789 12</h6>
-                            <div class="contact-social" >
+                            <div class="contact-social">
                                 <ul>
                                     <li><a class="hover-target" href=""><i class="fab fa-facebook-f"></i></a></li>
                                     <li><a class="hover-target" href=""><i class="fab fa-linkedin-in"></i></a></li>
